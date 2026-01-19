@@ -3,7 +3,6 @@ package com.example.cryptooffline.data.local
 import androidx.room.Database
 import androidx.room.RoomDatabase
 
-
 @Database(
     entities = [CoinEntity::class],
     version = 1
