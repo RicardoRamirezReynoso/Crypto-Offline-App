@@ -28,4 +28,17 @@ los precios actualizados en segundo plano.
 *   **Carga de Imágenes:** [Coil] para cargar y cachear los íconos de las criptomonedas de forma asíncrona.
 *   **Procesamiento de Anotaciones:** [KSP (Kotlin Symbol Processing)] para un rendimiento de compilación más rápido con Hilt, Room y Moshi.
 
+<table>
+  <tr>
+    <td><b>Lista de Monedas</b></td>
+    <td><b>Detalle</b></td>
+  </tr>
+  <tr>
+    <td><img width="1080" height="2400" alt="Screenshot_20260118_203705" src="https://github.com/user-attachments/assets/0a0c17e4-bb09-4007-953b-328f9e93ff4e" />
+    <td><img width="1080" height="2400" alt="Screenshot_20260118_203736" src="https://github.com/user-attachments/assets/8e7aa1f5-dea4-4cad-ba46-8ef31dba9ec4" />
+    <td><img width="1080" height="2400" alt="Screenshot_20260118_204503" src="https://github.com/user-attachments/assets/31267457-9a42-4aca-999c-02db5717cf87" />
+  </tr>
+</table>
+
+
 
