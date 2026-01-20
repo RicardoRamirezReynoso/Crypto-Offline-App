@@ -33,7 +33,7 @@ class CryptoOfflineApp : Application() {
     // Creacion de solicitud de trabajo periódico
     private fun setupRecurringWork() {
         val repeatingRequest = PeriodicWorkRequestBuilder<PriceUpdateWorker>(
-            20, // Intervalo de repetición
+            10, // Intervalo de repetición
             TimeUnit.MINUTES
         ).build()
 
