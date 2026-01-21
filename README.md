@@ -34,11 +34,9 @@ los precios actualizados en segundo plano.
     <td><b>Detalle</b></td>
   </tr>
   <tr>
-    <td><img width="1080" height="2400" alt="Screenshot_20260118_203705" src="https://github.com/user-attachments/assets/0a0c17e4-bb09-4007-953b-328f9e93ff4e" />
-    <td><img width="1080" height="2400" alt="Screenshot_20260118_203736" src="https://github.com/user-attachments/assets/8e7aa1f5-dea4-4cad-ba46-8ef31dba9ec4" />
-    <td><img width="1080" height="2400" alt="Screenshot_20260118_204503" src="https://github.com/user-attachments/assets/31267457-9a42-4aca-999c-02db5717cf87" />
+    <td><img width="1080" height="2400" alt="Screenshot_20260119_205213" src="https://github.com/user-attachments/assets/9c08dd4c-950f-49d1-8f41-3b04ee21e1ee" />
+    <td><img width="1080" height="2400" alt="Screenshot_20260119_205224" src="https://github.com/user-attachments/assets/e9450cd0-daa1-4a6e-af3c-cdc91a1f37a1" />
+    <td><img width="1080" height="2400" alt="Screenshot_20260119_205243" src="https://github.com/user-attachments/assets/6c640d54-51ac-483f-9e65-19424a9b59c6" />
   </tr>
 </table>
-
-
 
