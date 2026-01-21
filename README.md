@@ -46,12 +46,12 @@ los precios actualizados en segundo plano.
 *   **Tareas en Segundo Plano:** [WorkManager] para programar la actualización periódica de los precios.
 *   **Carga de Imágenes:** [Coil] para cargar y cachear los íconos de las criptomonedas de forma asíncrona.
 *   **Procesamiento de Anotaciones:** [KSP (Kotlin Symbol Processing)] para un rendimiento de compilación más rápido con Hilt, Room y Moshi.
-* *   **Testing:**
-*   [JUnit4]: Framework base para las pruebas.
-*   [MockK]: Para crear mocks y fakes en las pruebas unitarias.
-*   [Turbine]: Para probar `Flows` de Kotlin de manera sencilla.
-*   [Compose Test]: Para escribir pruebas de UI e interactuar con los `Composables`.
-*   [Hilt Test Support]: Para la inyección de dependencias en pruebas de instrumentación.
+*   **Testing:**
+    *   [JUnit4]: Framework base para las pruebas.
+    *   [MockK]: Para crear mocks y fakes en las pruebas unitarias.
+    *   [Turbine]: Para probar `Flows` de Kotlin de manera sencilla.
+    *   [Compose Test]: Para escribir pruebas de UI e interactuar con los `Composables`.
+    *   [Hilt Test Support]: Para la inyección de dependencias en pruebas de instrumentación.
 
 ## Próximos Pasos
 
