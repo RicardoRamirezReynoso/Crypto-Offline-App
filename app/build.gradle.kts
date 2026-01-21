@@ -18,8 +18,7 @@ android {
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.example.cryptooffline.HiltTestRunner"
     }
 
     buildTypes {
@@ -41,6 +40,16 @@ android {
     buildFeatures {
         compose = true
     }
+
+    packaging {
+        resources {
+            // Excluye archivos de licencia duplicados que causan el error en la prueba de IU (MarketScreenTest)
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "/META-INF/LICENSE.md"
+            excludes += "/META-INF/LICENSE-notice.md"
+            excludes += "/META-INF/com.android.tools/package-analysis/jdk-reflection-config.json"
+        }
+    }
 }
 
 dependencies {
@@ -55,35 +64,45 @@ dependencies {
     implementation(libs.androidx.compose.material.icons.extended)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.coil.compose)
-    // Inyección de Dependencias - Hilt
     implementation(libs.hilt.android)
-    ksp(libs.hilt.compiler)
     implementation(libs.hilt.navigation.compose)
     implementation(libs.hilt.work)
-    ksp(libs.hilt.compiler.androidx)
-    // Red - Retrofit & Moshi
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.moshi)
     implementation(libs.moshi.kotlin)
     implementation(libs.moshi.adapters)
-    ksp(libs.moshi.codegen)
     implementation(libs.okhttp.logging.interceptor)
-    // Base de Datos Local - Room
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
-    ksp(libs.room.compiler)
-    // Tareas en Segundo Plano - WorkManager
     implementation(libs.work.runtime.ktx)
-    // Almacenamiento de Preferencias - DataStore
     implementation(libs.datastore.preferences)
-    // ViewModel
     implementation(libs.androidx.lifecycle.viewmodel.compose)
-    // Test
+    // Generación de Código con KSP
+    ksp(libs.hilt.compiler)
+    ksp(libs.hilt.compiler.androidx)
+    ksp(libs.moshi.codegen)
+    ksp(libs.room.compiler)
+    // Pruebas Unitarias
     testImplementation(libs.junit)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.mockk)
+    testImplementation(libs.cash.turbine)
+    // Hilt para Pruebas Unitarias
+    testImplementation(libs.hilt.android.testing)
+    kspTest(libs.hilt.compiler.testing)
+    // Pruebas de Instrumentación
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.androidx.test.runner)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
+    androidTestImplementation(libs.kotlinx.coroutines.test)
+    androidTestImplementation(libs.mockk.android)
+    androidTestImplementation(libs.cash.turbine)
+    // Hilt para Pruebas de Instrumentación
+    androidTestImplementation(libs.hilt.android.testing)
+    kspAndroidTest(libs.hilt.compiler.testing)
+    // Dependencias de Depuración (Debug)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 }

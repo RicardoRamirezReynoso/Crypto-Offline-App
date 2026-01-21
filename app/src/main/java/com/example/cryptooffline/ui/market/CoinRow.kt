@@ -31,7 +31,6 @@ import coil.compose.AsyncImage
 import com.example.cryptooffline.data.local.CoinEntity
 import java.text.NumberFormat
 import java.util.Locale
-import kotlin.io.path.moveTo
 
 @Composable
 fun CoinRow(
