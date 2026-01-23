@@ -1,6 +1,6 @@
 # Crypto Offline App
 
-**Crypto Offline App** es una aplicación de Android moderna construida con Kotlin y Jetpack Compose, diseñada para monitorear los precios de las criptomonedas. 
+**Crypto Offline App** es una aplicación de Android construida con Kotlin y Jetpack Compose, diseñada para monitorear los precios de las criptomonedas. 
 Su arquitectura permite consultar datos en tiempo real de la API de CoinGecko, almacenarlos localmente para un funcionamiento sin conexión y mantener
 los precios actualizados en segundo plano.
 
